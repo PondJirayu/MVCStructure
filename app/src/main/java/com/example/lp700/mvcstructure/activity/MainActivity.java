@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
 //        ScreenUtils.getInstance().setX(5);
 //        int x = ScreenUtils.getInstance().getX();
 
-        Toast.makeText(MainActivity.this,"Width : " + screenWidth + "Height : " + screenHeight, Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,"Width : " + screenWidth + " Height : " + screenHeight, Toast.LENGTH_SHORT).show();
     }
 }
