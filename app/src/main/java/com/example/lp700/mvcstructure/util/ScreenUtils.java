@@ -13,6 +13,7 @@ import com.inthecheesefactory.thecheeselibrary.manager.Contextor;
 public class ScreenUtils {
 
     private static ScreenUtils instance;
+//    private int x = 0;
 
     public static ScreenUtils getInstance() {
         if (instance == null)
@@ -42,4 +43,11 @@ public class ScreenUtils {
         return size.y;
     }
 
+//    public int getX() {
+//        return x;
+//    }
+//
+//    public void setX(int x) {
+//        this.x = x;
+//    }
 }
