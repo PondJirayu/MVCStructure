@@ -13,7 +13,6 @@ import com.inthecheesefactory.thecheeselibrary.manager.Contextor;
 public class ScreenUtils {
 
     private static ScreenUtils instance;
-//    private int x = 0;
 
     public static ScreenUtils getInstance() {
         if (instance == null)

@@ -1,5 +1,6 @@
 package com.example.lp700.mvcstructure.activity;
 
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -17,6 +18,16 @@ public class MainActivity extends AppCompatActivity {
         // ทดลองใช้ Singleton Model
         int screenWidth = ScreenUtils.getInstance().getScreenWidth();
         int screenHeight = ScreenUtils.getInstance().getScreenHeight();
+
         Toast.makeText(getApplicationContext(),"Width : " + screenWidth + " Height : " + screenHeight, Toast.LENGTH_SHORT).show();
+
+        // Separate by Android Version
+        if (Build.VERSION.SDK_INT >= 21){
+            // Run on Android 21+
+
+        } else {
+            // Run on Android 1-20
+
+        }
     }
 }
