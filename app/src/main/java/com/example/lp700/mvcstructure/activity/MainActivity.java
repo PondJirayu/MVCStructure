@@ -14,11 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // ทดลองใช้ Singleton Model
         int screenWidth = ScreenUtils.getInstance().getScreenWidth();
         int screenHeight = ScreenUtils.getInstance().getScreenHeight();
-
-//        ScreenUtils.getInstance().setX(5);
-//        int x = ScreenUtils.getInstance().getX();
 
         Toast.makeText(getApplicationContext(),"Width : " + screenWidth + " Height : " + screenHeight, Toast.LENGTH_SHORT).show();
     }

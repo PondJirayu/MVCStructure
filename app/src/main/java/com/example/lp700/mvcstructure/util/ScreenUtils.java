@@ -43,11 +43,4 @@ public class ScreenUtils {
         return size.y;
     }
 
-//    public int getX() {
-//        return x;
-//    }
-//
-//    public void setX(int x) {
-//        this.x = x;
-//    }
 }
