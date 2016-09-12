@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         // ทดลองใช้ Singleton Model
         int screenWidth = ScreenUtils.getInstance().getScreenWidth();
         int screenHeight = ScreenUtils.getInstance().getScreenHeight();
-
         Toast.makeText(getApplicationContext(),"Width : " + screenWidth + " Height : " + screenHeight, Toast.LENGTH_SHORT).show();
     }
 }
