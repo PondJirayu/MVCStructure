@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.lp700.mvcstructure.R;
+import com.example.lp700.mvcstructure.fragment.MainFragment;
 import com.example.lp700.mvcstructure.util.ScreenUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
         } else {
             // Run on Android 1-20
 
+        }
+
+        if (savedInstanceState == null){
+            // First Created
+            // Place Fragment here
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.contentContainer, new MainFragment())
+                    .commit();
         }
     }
 }
