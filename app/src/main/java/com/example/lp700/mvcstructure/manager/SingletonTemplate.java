@@ -20,7 +20,7 @@ public class SingletonTemplate {
     private Context mContext;
 
     private SingletonTemplate() {
-        mContext = Contextor.getInstance().getContext();
+        mContext = Contextor.getInstance().getContext(); // ขอ Application Context จาก Contextor เก็บไว้ในตัวแปร mContext
     }
 
 }

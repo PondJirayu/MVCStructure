@@ -13,7 +13,8 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Contextor.getInstance().init(getApplicationContext());
+        // Initialize thing(s) here
+        Contextor.getInstance().init(getApplicationContext()); // การเอา Application Context มาฝากที่ Contextor
     }
 
     @Override
