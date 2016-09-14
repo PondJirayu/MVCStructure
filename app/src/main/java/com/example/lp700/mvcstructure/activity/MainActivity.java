@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (fragment instanceof SecondFragment == false) {
                     getSupportFragmentManager().beginTransaction()
-                            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                            .setCustomAnimations(R.anim.from_right, R.anim.to_left, R.anim.from_left, R.anim.to_right)
                             .replace(R.id.contentContainer, SecondFragment.newInstance())
                             .addToBackStack(null)
                             .commit();
