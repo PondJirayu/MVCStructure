@@ -17,6 +17,7 @@ import com.example.lp700.mvcstructure.R;
 public class MainFragment extends Fragment{
 
     int someVar;
+    int x, y, z;
 
     TextView tvHello;
 
@@ -50,5 +51,19 @@ public class MainFragment extends Fragment{
 
     public void setHelloText(String text) {
         tvHello.setText(text);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null){
+            // Restore state here
+        }
     }
 }
