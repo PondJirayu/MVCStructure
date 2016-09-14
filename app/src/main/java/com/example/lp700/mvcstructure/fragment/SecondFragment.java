@@ -13,7 +13,7 @@ import com.example.lp700.mvcstructure.R;
 /**
  * Created by nuuneoi on 11/16/2014.
  */
-public class SecondFragment extends Fragment {
+public class SecondFragment extends Fragment implements View.OnClickListener{
 
     Button btnOK;
 
@@ -39,6 +39,14 @@ public class SecondFragment extends Fragment {
     private void initInstances(View rootView) {
         // Init 'View' instance(s) with rootView.findViewById here
         btnOK = (Button) rootView.findViewById(R.id.btnOk);
+        btnOK.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == btnOK){
+            getFragmentManager().popBackStack();
+        }
     }
 
     @Override
