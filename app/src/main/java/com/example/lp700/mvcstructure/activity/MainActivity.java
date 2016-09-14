@@ -1,6 +1,7 @@
 package com.example.lp700.mvcstructure.activity;
 
 import android.os.Build;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -35,8 +36,20 @@ public class MainActivity extends AppCompatActivity {
             // First Created
             // Place Fragment here
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.contentContainer, MainFragment.newInstance(123))
+                    .add(R.id.contentContainer,
+                            MainFragment.newInstance(123),
+                            "MainFragment")
                     .commit();
+        }
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        if (savedInstanceState == null){
+            MainFragment fragment = (MainFragment)
+                    getSupportFragmentManager().findFragmentByTag("MainFragment");
+            fragment.setHelloText("Woo Hooooooo");
         }
     }
 }
