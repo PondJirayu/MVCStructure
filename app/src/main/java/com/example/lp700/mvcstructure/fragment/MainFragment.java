@@ -17,6 +17,7 @@ public class MainFragment extends Fragment{
 
     int someVar;
 
+    // สร้าง fragment ขึ้นมาจากคำสั่งนี้เสมอ
     public static MainFragment newInstance(int someVar){
         MainFragment fragment = new MainFragment();
         Bundle args = new Bundle();
