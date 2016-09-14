@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             // First Created
             // Place Fragment here
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.contentContainer, new MainFragment())
+                    .add(R.id.contentContainer, MainFragment.newInstance(123))
                     .commit();
         }
     }
