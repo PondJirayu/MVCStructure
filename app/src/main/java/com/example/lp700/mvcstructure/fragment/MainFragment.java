@@ -54,6 +54,7 @@ public class MainFragment extends Fragment {
         tvHello.setText(text);
     }
 
+    // Save State Fragment here
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);

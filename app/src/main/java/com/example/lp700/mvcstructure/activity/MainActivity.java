@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        // แปะ Fragment ที่ Activity
+        // แปะ Fragment ที่ Activity  -- Fragment แปะครั้งแรกครั้งเดียวไม่ต้องแปะซ้ำ ระบบจะจัดการให้ตอนที่ Activity เกิดใหม่
         if (savedInstanceState == null){
             // First Created
             // Place Fragment here
