@@ -14,7 +14,7 @@ import com.example.lp700.mvcstructure.R;
 /**
  * Created by lp700 on 12/9/2559.
  */
-public class MainFragment extends Fragment{
+public class MainFragment extends Fragment {
 
     int someVar;
     int x, y, z;
@@ -22,7 +22,7 @@ public class MainFragment extends Fragment{
     TextView tvHello;
 
     // สร้าง fragment ขึ้นมาจากคำสั่งนี้เสมอ
-    public static MainFragment newInstance(int someVar){
+    public static MainFragment newInstance(int someVar) {
         MainFragment fragment = new MainFragment();
         Bundle args = new Bundle();
         args.putInt("someVar", someVar);
@@ -36,12 +36,13 @@ public class MainFragment extends Fragment{
         someVar = getArguments().getInt("someVar");
     }
 
+    // Inflate Layout xml
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_main,container, false);
+        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         initInstances(rootView);
-        return  rootView;
+        return rootView;
     }
 
     private void initInstances(View rootView) {
@@ -62,7 +63,7 @@ public class MainFragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        if (savedInstanceState != null){
+        if (savedInstanceState != null) {
             // Restore state here
         }
     }
