@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        // แปะ Fragment ที่ Activity
         if (savedInstanceState == null){
             // First Created
             // Place Fragment here
