@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
                             "SecondFragment")
                     .detach(secondFragment)
                     .commit();
+
+
+            // Try Crash
+//            MainFragment fragment = (MainFragment)
+//                    getSupportFragmentManager().findFragmentByTag("MainFragment");
+//            fragment.setHelloText("Woo Hooooooo");
         }
     }
 
