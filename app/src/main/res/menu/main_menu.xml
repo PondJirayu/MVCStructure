@@ -7,4 +7,14 @@
         android:title="@string/second_fragment"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_first_tab"
+        android:title="1st Tab"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_second_tab"
+        android:title="2st Tab"
+        app:showAsAction="never"/>
+
 </menu>
