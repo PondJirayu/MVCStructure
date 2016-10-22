@@ -45,7 +45,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         if (v == btnOK){
-            getFragmentManager().popBackStack();
+            getFragmentManager().popBackStack(); // ถอน SecondFragment ออกจาก Stack
         }
     }
 

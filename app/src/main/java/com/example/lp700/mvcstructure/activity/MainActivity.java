@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().findFragmentByTag("MainFragment");
                 SecondFragment secondFragment = (SecondFragment)
                         getSupportFragmentManager().findFragmentByTag("SecondFragment");
+
                 getSupportFragmentManager().beginTransaction()
                         .attach(mainFragment)
                         .detach(secondFragment)
@@ -116,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().findFragmentByTag("MainFragment");
                 SecondFragment secondFragment = (SecondFragment)
                         getSupportFragmentManager().findFragmentByTag("SecondFragment");
+
                 getSupportFragmentManager().beginTransaction()
                         .attach(secondFragment)
                         .detach(mainFragment)
