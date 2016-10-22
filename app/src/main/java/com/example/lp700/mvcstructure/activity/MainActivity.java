@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                     .detach(secondFragment)
                     .commit();
 
-
             // Try Crash
 //            MainFragment fragment = (MainFragment)
 //                    getSupportFragmentManager().findFragmentByTag("MainFragment");
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.contentContainer); // ค้นหา fragment ตัวที่อยู่บนสุด
 
-                if (fragment instanceof SecondFragment == false) {
+                if (!(fragment instanceof SecondFragment)) {
                     getSupportFragmentManager().beginTransaction()
 //                            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                             .setCustomAnimations(R.anim.from_right, R.anim.to_left, R.anim.from_left, R.anim.to_right)
